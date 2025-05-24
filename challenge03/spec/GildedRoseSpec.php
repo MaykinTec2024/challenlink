@@ -4,11 +4,11 @@ use App\GildedRose;
 
 describe('GildedRose', function () {
     it('degrada calidad de un ítem normal', function () {
-        $item = GildedRose::of('foo', 20, 10); // name, quality, sellIn
+        $item = GildedRose::of('foo', 20, 10); 
         $item->tick();
 
-        expect($item->quality)->toBe(19);     // baja calidad
-        expect($item->sellIn)->toBe(9);       // baja sellIn
+        expect($item->quality)->toBe(19);     
+        expect($item->sellIn)->toBe(9);       
     });
 
     it('incrementa calidad de Aged Brie', function () {
@@ -30,7 +30,7 @@ describe('GildedRose', function () {
         $item = GildedRose::of('Backstage passes to a TAFKAL80ETC concert', 20, 10);
         $item->tick();
 
-        expect($item->quality)->toBe(22); // +2 cuando sellIn <= 10
+        expect($item->quality)->toBe(22); 
         expect($item->sellIn)->toBe(9);
     });
 

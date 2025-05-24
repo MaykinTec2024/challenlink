@@ -28,7 +28,6 @@ class GildedRose
                 break;
 
             case 'Sulfuras, Hand of Ragnaros':
-                // Sulfuras nunca cambia
                 break;
 
             case 'Backstage passes to a TAFKAL80ETC concert':
@@ -76,7 +75,6 @@ class GildedRose
         } elseif ($this->sellIn > 0) {
             $this->increaseQuality(3);
         } else {
-            // Después del concierto la calidad cae a 0
             $this->quality = 0;
         }
 
