@@ -1,4 +1,4 @@
 ## challengue 03
-ejecutar:
-composer install
-kahlan --reporter=verbose
+- ejecutar:
+- composer install
+- kahlan --reporter=verbose
